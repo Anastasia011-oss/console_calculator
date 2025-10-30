@@ -12,76 +12,9 @@ def main():
 
             choice = input("Choose an option: ").strip()
 
-            if choice == '0':
-                print("Exiting the calculator.")
-                break
-
-            if choice == '1':
-                num1_input = input("Enter the first number: ").strip()
-                num1 = float(num1_input)
-
-                num2_input = input("Enter the second number: ").strip()
-                num2 = float(num2_input)
-
-                result = num1 + num2
-                print(f"Result: {num1} + {num2} = {result}")
-
-            elif choice == '2':
-                num1_input = input("Enter the first number: ").strip()
-                num1 = float(num1_input)
-
-                num2_input = input("Enter the second number: ").strip()
-                num2 = float(num2_input)
-
-                result = num1 - num2
-                print(f"Result: {num1} - {num2} = {result}")
-
-            elif choice == '3':
-                num1_input = input("Enter the first number: ").strip()
-                if num1_input == "":
-                    print("Error: nothing was entered!")
-                    continue
-                num1 = float(num1_input)
-
-                num2_input = input("Enter the second number: ").strip()
-                if num2_input == "":
-                    print("Error: nothing was entered!")
-                    continue
-                num2 = float(num2_input)
-
-                result = num1 * num2
-                print(f"Result: {num1} * {num2} = {result}")
-
-            elif choice == '4':  
-                num1_input = input("Enter the first number: ").strip()
-                if num1_input == "":
-                    print("Error: nothing was entered!")
-                    continue
-                num1 = float(num1_input)
-
-                num2_input = input("Enter the second number: ").strip()
-                if num2_input == "":
-                    print("Error: nothing was entered!")
-                    continue
-                num2 = float(num2_input)
-
-                if num2 == 0:
-                    print("Error: division by zero!")
-                    continue
-
-                result = num1 / num2
-                print(f"Result: {num1} / {num2} = {result}")
-
-
-
-        except ValueError:
-            print("Error: please enter valid numbers!")
-
-
 
 
 if __name__ == "__main__":
     main()
 
-    main()
 
