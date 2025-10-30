@@ -36,6 +36,23 @@ def main():
                 result = num1 - num2
                 print(f"Result: {num1} - {num2} = {result}")
 
+            elif choice == '3':
+                num1_input = input("Enter the first number: ").strip()
+                if num1_input == "":
+                    print("Error: nothing was entered!")
+                    continue
+                num1 = float(num1_input)
+
+                num2_input = input("Enter the second number: ").strip()
+                if num2_input == "":
+                    print("Error: nothing was entered!")
+                    continue
+                num2 = float(num2_input)
+
+                result = num1 * num2
+                print(f"Result: {num1} * {num2} = {result}")
+
+
         except ValueError:
             print("Error: please enter valid numbers!")
 
