@@ -12,6 +12,12 @@ def main():
 
             choice = input("Choose an option: ").strip()
 
+            if choice == '0':
+                print("Exiting the calculator.")
+                break
+
+        except ValueError:
+            print("Error: please enter valid numbers!")
 
 
 if __name__ == "__main__":
